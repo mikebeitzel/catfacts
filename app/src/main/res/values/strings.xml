@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">catfacts</string>
+    <string name="new_cat_fact_btn_txt">NEW CAT FACT</string>
 </resources>

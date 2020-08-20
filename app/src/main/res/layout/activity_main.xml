@@ -8,10 +8,13 @@
 
     <TextView
         android:id="@+id/catFactText"
-        android:layout_width="406dp"
-        android:layout_height="171dp"
-        android:text="Hello World!"
+        android:layout_width="384dp"
+        android:layout_height="595dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +23,7 @@
         android:id="@+id/catFactButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="New Cat Fact"
+        android:text="@string/new_cat_fact_btn_txt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

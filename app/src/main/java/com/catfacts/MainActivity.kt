@@ -5,6 +5,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
+import org.json.JSONException
+import org.json.JSONObject
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,11 +39,23 @@ class MainActivity : AppCompatActivity() {
                     response: Response
                 ) {
                     if (response.isSuccessful) {
-                        val myResponse = response.body!!.string()
-                        runOnUiThread { mTextViewResult?.run { setText(myResponse) } }
+                        val responseData = response.body!!.string()
+                        runOnUiThread {
+                            try {
+                                val json = JSONObject(responseData)
+                                println("Request Successful!!")
+                                println(json)
+                                val responseObject = json.getString("fact")
+                                catFactText.text = responseObject
+                            } catch (e: JSONException) {
+                                e.printStackTrace()
+                            }
+                        }
                     }
                 }
             })
         }
+
+
     }
 }
