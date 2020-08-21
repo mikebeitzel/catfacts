@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">catfacts</string>
     <string name="new_cat_fact_btn_txt">NEW CAT FACT</string>
+    <string name="cat_fact_greeter">Welcome To Cat Facts!</string>
+    <string name="cat_fact_greeter_statement_txt">100% True and Honest Facts Only!</string>
+    <string name="cat_fact_greeter_statement_2_txt">Impress none of your friends with these useless FACTS ABOUT CATS!</string>
+    <string name="cat_facts_launcher_btn_txt">LEARN SOME NEW CAT FACTS</string>
 </resources>
