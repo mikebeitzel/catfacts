@@ -1,8 +1,22 @@
 <resources>
     <string name="app_name">catfacts</string>
+    <string name="logo">logo</string>
     <string name="new_cat_fact_btn_txt">NEW CAT FACT</string>
     <string name="cat_fact_greeter">Welcome To Cat Facts!</string>
     <string name="cat_fact_greeter_statement_txt">100% True and Honest Facts Only!</string>
     <string name="cat_fact_greeter_statement_2_txt">Impress none of your friends with these useless FACTS ABOUT CATS!</string>
     <string name="cat_facts_launcher_btn_txt">LEARN SOME NEW CAT FACTS</string>
+
+    <string name="navigation_bg_img">navigation background image</string>
+    <string name="navigation_btn_layout">btn_layout</string>
+    <string name="cat_facts_fact_type">FACT TYPE</string>
+    <string name="navigation_breeds_btn_txt">BREEDS</string>
+    <string name="navigation_breeds_toggle_btn">breeds_toggle_btn</string>
+    <string name="navigation_single_fact_btn_txt">SINGLE FACT</string>
+    <string name="navigation_single_fact_toggle_btn">single_fact_toggle_btn</string>
+    <string name="navigation_multiple_facts_btn_txt">MULTIPLE FACTS</string>
+    <string name="navigation_multiple_facts_toggle_btn">multiple_facts_toggle_btn</string>
+
+    <string name="global_next_txt">NEXT</string>
+
 </resources>

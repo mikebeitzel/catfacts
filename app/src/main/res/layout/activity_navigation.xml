@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity">
+
+    <ImageView
+        android:id="@+id/navigationBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/navigation_bg_img"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat_facts_navigation_screen" />
+
+    <ImageView
+        android:id="@+id/catFactsLogo"
+        android:layout_width="309dp"
+        android:layout_height="133dp"
+        android:contentDescription="@string/logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/cat_facts_logo" />
+
+    <TextView
+        android:id="@+id/navigation_fact_type_txt"
+        android:layout_width="256dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="77dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="2"
+        android:text="@string/cat_facts_fact_type"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/navigationBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catFactsLogo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/navigationBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigation_fact_type_txt">
+
+        <ToggleButton
+            android:id="@+id/breedsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/global_button"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/navigation_breeds_toggle_btn"
+            android:textColor="#FFFFFF"
+            android:textOff="@string/navigation_breeds_btn_txt"
+            android:textOn="@string/navigation_breeds_btn_txt"
+            android:textSize="36sp" />
+
+        <ToggleButton
+            android:id="@+id/singleFactBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/global_button"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/navigation_single_fact_toggle_btn"
+            android:textColor="#FFFFFF"
+            android:textOff="@string/navigation_single_fact_btn_txt"
+            android:textOn="@string/navigation_single_fact_btn_txt"
+            android:textSize="36sp" />
+
+        <ToggleButton
+            android:id="@+id/multipleFactsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/global_button"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/navigation_multiple_facts_toggle_btn"
+            android:textColor="#FFFFFF"
+            android:textOff="@string/navigation_multiple_facts_btn_txt"
+            android:textOn="@string/navigation_multiple_facts_btn_txt"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cat_fact_selector_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/global_button"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="@string/global_next_txt"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

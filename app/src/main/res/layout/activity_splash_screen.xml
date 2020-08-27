@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/catInItalyBG" />
+        app:srcCompat="@drawable/cat_facts_splash_screen" />
 
     <ImageView
         android:id="@+id/catFactsLogo"
@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048"
-        app:srcCompat="@drawable/catFactsLogo" />
+        app:srcCompat="@drawable/cat_facts_logo" />
 
     <TextView
         android:id="@+id/greeterTxt"
@@ -92,7 +92,7 @@
         android:id="@+id/catFactStartBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/cat_fact_start_button"
+        android:background="@drawable/global_button"
         android:fontFamily="@font/biorhyme_bold"
         android:text="@string/cat_facts_launcher_btn_txt"
         android:textColor="#FFFFFF"
