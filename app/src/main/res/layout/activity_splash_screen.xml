@@ -94,7 +94,7 @@
         android:id="@+id/catFactStartBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/global_button"
+        android:background="@drawable/global_button_toggle"
         android:fontFamily="@font/biorhyme_bold"
         android:text="@string/cat_facts_launcher_btn_txt"
         android:textColor="#FFFFFF"
