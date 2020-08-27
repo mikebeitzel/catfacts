@@ -1,4 +1,7 @@
 <resources>
+    <string name="cat_facts_splash_page_background">splash_page_background</string>
+    <string name="cat_facts_logo_img">cat_facts_logo_img</string>
+
     <string name="app_name">catfacts</string>
     <string name="logo">logo</string>
     <string name="new_cat_fact_btn_txt">NEW CAT FACT</string>
@@ -18,5 +21,7 @@
     <string name="navigation_multiple_facts_toggle_btn">multiple_facts_toggle_btn</string>
 
     <string name="global_next_txt">NEXT</string>
+
+
 
 </resources>

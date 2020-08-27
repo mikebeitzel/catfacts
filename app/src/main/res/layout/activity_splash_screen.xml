@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cat_facts_splash_screen" />
+        app:srcCompat="@drawable/cat_facts_splash_screen"
+        android:contentDescription="@string/cat_facts_splash_page_background" />
 
     <ImageView
         android:id="@+id/catFactsLogo"
@@ -26,7 +27,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048"
-        app:srcCompat="@drawable/cat_facts_logo" />
+        app:srcCompat="@drawable/cat_facts_logo"
+        android:contentDescription="@string/cat_facts_logo_img" />
 
     <TextView
         android:id="@+id/greeterTxt"
