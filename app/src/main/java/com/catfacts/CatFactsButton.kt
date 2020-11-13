@@ -10,6 +10,8 @@ import org.json.JSONObject
 
 class CatFactsButton : AppCompatActivity() {
 
+
+
     private var mTextViewResult: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,9 +20,10 @@ class CatFactsButton : AppCompatActivity() {
 
         val client = OkHttpClient()
         val url = "https://catfact.ninja/fact?max_length=140"
+        val nasaURL = "https://images-api.nasa.gov/search"
 
         val request = Request.Builder()
-            .url(url)
+            .url(nasaURL)
             .build()
 
         catFactButton.setOnClickListener {
