@@ -4,6 +4,8 @@ import java.util.*
 
 class Images {
 
+
+
     private var mItems: String? = null
     private var mData: String? = null
     private var mNasaId: String? = null
@@ -47,6 +49,22 @@ class Images {
         this.mImage = mImage
         this.mSubtitles = mSubtitles
         this.mVideo = mVideo
+    }
+
+    override fun toString(): String {
+        return "Images(mItems=$mItems," +
+                " mData=$mData," +
+                " mNasaId=$mNasaId," +
+                " mDescription=$mDescription," +
+                " mTitle=$mTitle," +
+                " mKeywords=$mKeywords," +
+                " mDateCreate=$mDateCreate," +
+                " mDescription508=$mDescription508," +
+                " mLocation=$mLocation," +
+                " mMediaType=$mMediaType," +
+                " mImage=$mImage," +
+                " mSubtitles=$mSubtitles," +
+                " mVideo=$mVideo)"
     }
 
 

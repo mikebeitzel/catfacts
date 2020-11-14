@@ -1,22 +1,26 @@
 package com.catfacts
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
+import com.catfacts.R.id.recyclerView
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_splash_screen.*
 import okhttp3.*
 import org.json.JSONException
 import org.json.JSONObject
 
+
 class MainActivity : AppCompatActivity() {
 
     private var mTextViewResult: TextView? = null
+    var recyclerView: RecyclerView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        recyclerView = findViewById(R.id.recyclerView)
 
         val client = OkHttpClient()
 //        val url = "https://catfact.ninja/fact?max_length=140"
